@@ -51,7 +51,7 @@ clear
 # Tampilkan menu
 if [ -z "$1" ]; then
     echo -e "${orange}─────────────────────────────────────────${neutral}"
-    echo -e "     ${green}.::::. FIGHTERTUNNEL .::::.${neutral}"
+    echo -e "     ${green}.::::. OSPROJECT VPN .::::.${neutral}"
     echo -e "${orange}─────────────────────────────────────────${neutral}"
     echo -e "${blue}The Best Place for Secure and Fast Connection!${neutral}"
     echo -e "${yellow}Enter your domain to start the installer:${neutral}"
@@ -100,29 +100,29 @@ ip=$(wget -qO- ipinfo.io/ip)
 data=$(curl -s https://raw.githubusercontent.com/oktaviaps/registrasi/main/ipmini)
 key=$(echo "$data" | awk -v ip="$ip" '$3 == ip {print $1}')
 nginx_key_url="https://nginx.org/keys/nginx_signing.key"
-dropbear_init_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/dropbear/dropbear"
-dropbear_conf_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/FighterTunnel-examples/dropbear"
-dropbear_dss_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/dropbear/dropbear_dss_host_key"
-sshd_conf_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/FighterTunnel-examples/sshd"
-banner_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/FighterTunnel-examples/banner"
-common_password_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/FighterTunnel-examples/common-password"
-ws_py_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/websocket/ws.py"
-client_service_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/X-SlowDNS/client"
-server_service_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/X-SlowDNS/server"
+dropbear_init_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/dropbear/dropbear"
+dropbear_conf_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/Tunnel-examples/dropbear"
+dropbear_dss_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/dropbear/dropbear_dss_host_key"
+sshd_conf_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/Tunnel-examples/sshd"
+banner_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/Tunnel-examples/banner"
+common_password_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/Tunnel-examples/common-password"
+ws_py_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/websocket/ws.py"
+client_service_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/X-SlowDNS/client"
+server_service_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/X-SlowDNS/server"
 gotop_url="https://raw.githubusercontent.com/xxxserxxx/gotop/master/scripts/download.sh"
-haproxy_cfg_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/Haproxy/haproxy.cfg"
-xray_conf_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/nginx/xray.conf"
-udp_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/bhoikfostyahya/udp-custom-linux-amd64"
-nginx_conf_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/nginx/nginx.conf"
-badvpn_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/BadVPN-UDPWG/badvpn"
-openvpn_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/openvpn/openvpn.zip"
-vmess_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/VMess-VLESS-Trojan+Websocket+gRPC/vmess/config.json"
-vless_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/VMess-VLESS-Trojan+Websocket+gRPC/vless/config.json"
-trojan_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/VMess-VLESS-Trojan+Websocket+gRPC/trojan/config.json"
-shadowsocks_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/VMess-VLESS-Trojan+Websocket+gRPC/shadowsocks/config.json"
-bbr_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/fodder/bbr.sh"
-dnstt_client_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/X-SlowDNS/dnstt-client"
-dnstt_server_url="https://raw.githubusercontent.com/FighterTunnel/tunnel/main/X-SlowDNS/dnstt-server"
+haproxy_cfg_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/Haproxy/haproxy.cfg"
+xray_conf_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/nginx/xray.conf"
+udp_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/bhoikfostyahya/udp-custom-linux-amd64"
+nginx_conf_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/nginx/nginx.conf"
+badvpn_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/BadVPN-UDPWG/badvpn"
+openvpn_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/openvpn/openvpn.zip"
+vmess_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/VMess-VLESS-Trojan+Websocket+gRPC/vmess/config.json"
+vless_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/VMess-VLESS-Trojan+Websocket+gRPC/vless/config.json"
+trojan_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/VMess-VLESS-Trojan+Websocket+gRPC/trojan/config.json"
+shadowsocks_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/VMess-VLESS-Trojan+Websocket+gRPC/shadowsocks/config.json"
+bbr_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/fodder/bbr.sh"
+dnstt_client_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/X-SlowDNS/dnstt-client"
+dnstt_server_url="https://raw.githubusercontent.com/Tunnel/tunnel/main/X-SlowDNS/dnstt-server"
 file_dir="https://raw.githubusercontent.com/piapiyol/ft/main/src.zip"
 
 os_id=$(grep -w ID /etc/os-release | head -n1 | sed 's/ID=//g' | sed 's/"//g')
@@ -453,9 +453,9 @@ else
 fi
 
 if [ -n "$banner_url" ]; then
-    wget -q -O /etc/fightertunnel.txt $banner_url && chmod +x /etc/fightertunnel.txt >/dev/null 2>&1 || echo -e "${red}Failed to download fightertunnel.txt${neutral}"
+    wget -q -O /etc/tunnel.txt $banner_url && chmod +x /etc/tunnel.txt >/dev/null 2>&1 || echo -e "${red}Failed to download tunnel.txt${neutral}"
 else
-    echo -e "${yellow}banner_url is not set, skipping download of fightertunnel.txt${neutral}"
+    echo -e "${yellow}banner_url is not set, skipping download of tunnel.txt${neutral}"
 fi
 
 if [ -n "$common_password_url" ]; then
@@ -887,7 +887,7 @@ restart="Restart=on-failure
 RestartPreventExitStatus=23"
 wanted_by="WantedBy=multi-user.target"
 after="After=network.target nss-lookup.target"
-documentation="Documentation=https://t.me/fightertunnell"
+documentation="Documentation=https://t.me/tunnell"
 
 # Function to create service
 create_service() {
@@ -916,10 +916,10 @@ EOF
 }
 
 # Create services for vmess, vless, trojan, and shadowsocks
-create_service "vmess" "FighterTunnel Server Xray Instance" "/usr/local/bin/xray run -config /etc/xray/vmess/%i.json"
-create_service "vless" "FighterTunnel Server Xray Instance" "/usr/local/bin/xray run -config /etc/xray/vless/%i.json"
-create_service "trojan" "FighterTunnel Server Xray Instance" "/usr/local/bin/xray run -config /etc/xray/trojan/%i.json"
-create_service "shadowsocks" "FighterTunnel Server Shadowsocks Instance" "/usr/local/bin/xray run -config /etc/xray/shadowsocks/%i.json"
+create_service "vmess" "Tunnel Server Xray Instance" "/usr/local/bin/xray run -config /etc/xray/vmess/%i.json"
+create_service "vless" "Tunnel Server Xray Instance" "/usr/local/bin/xray run -config /etc/xray/vless/%i.json"
+create_service "trojan" "Tunnel Server Xray Instance" "/usr/local/bin/xray run -config /etc/xray/trojan/%i.json"
+create_service "shadowsocks" "Tunnel Server Shadowsocks Instance" "/usr/local/bin/xray run -config /etc/xray/shadowsocks/%i.json"
 
 # Create additional configuration file for xray
 cat >/etc/systemd/system/xray@.service.d/10-donot_touch_single_conf.conf <<EOF
@@ -943,7 +943,7 @@ sudo systemctl daemon-reload
 # Create ws service
 cat >/etc/systemd/system/ws.service <<EOF
 [Unit]
-Description=Python Proxy FighterTunnel
+Description=Python Proxy Tunnel
 Documentation=https://t.me/yha_bot
 ${after}
 
